@@ -1,6 +1,5 @@
 .row {
 	max-width: $grid-width;
-	background-color: #eee;
 	margin: 0 auto;
 	
 /*	chooses all rows but the sudo class specified e.g. last-child
@@ -15,7 +14,6 @@
 	the selector below with the carrot - selects everything with a beginning class of col- */
 	
 	[class^="col-"] {
-		background-color: red;
 		float: left;
 
 		&:not(:last-child){

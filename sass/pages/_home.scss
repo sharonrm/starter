@@ -1,0 +1,9 @@
+/*remove white triangle - calculate using the header height - height: 95vh;
+and deduct the polygon clip path of 75vh and you end up with 20
+we use -20 b/c we want to move section up rather than down.*/
+
+.section-about {
+	background-color: $color-grey-light-1;
+	padding: 25rem 0;
+	margin-top: -20vh;
+}
