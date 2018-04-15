@@ -1,0 +1,10 @@
+/*//clearfix will append a sudo element after the elements in order to clear the floats//*/
+/*content becomes the new element but leave it empty b/c we don't want to see if on the page.*/
+
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

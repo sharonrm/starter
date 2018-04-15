@@ -21,3 +21,7 @@ npm install node-sass --save-dev
  8. add to watch changes -  "compile:sass": "node-sass sass/main.scss css/style.css -w" 
 
  9. npm install live-server -g (install globally). from home server in terminal: live-server. if necessary you can change the local server.
+
+ 10. full grid and layouts, flexible/responsive images, media queries
+
+ - layout types - float, flex, css grid
