@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+/* apply fonts on body element b/c it's the parent of every element
+and will apply to all the children. padding adds 30px padding looks like
+border*/
+
+/*set root font size - now 1rem = 10px but we want to 
+actually set it to % so that we don't change the browser
+font size. Do % e.g. 16/100 = 62.5%*/
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+}

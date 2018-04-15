@@ -4,11 +4,13 @@
   "description": "landing page for natours",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Sharon Moskal",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^5.8.0"
+  },
   "devDependencies": {
     "node-sass": "^4.8.3"
   }
