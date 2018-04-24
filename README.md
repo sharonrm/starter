@@ -8,7 +8,7 @@ npm install node-sass --save-dev
 
 4. create sass files: main.scss
 
-5. take all the css code and put it into the mail.css
+5. take all the css code and put it into the main.scss
 
 6. add npm script to package.json - using the  - node-sass and the input file- sass/main.scss output file - css/style.css
 
