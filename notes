@@ -3,3 +3,61 @@ SETTING UP A GRID:
 setup grid using floats and = spaces between columns.
 
 columns should always be in a row.
+
+use <figure> element when you have an image and a caption
+
+shape-outside: circle(50%) the % is the radius so in this case you'll get 50% radius of the div. Element must be floated for it to work and it must have a height and width or it won't work.
+
+The shape outside gives the circular text outline. use the identical measurements for the circle to get the circle shape for the image.
+
+Need to add space b/t circle and text and best way is to use transfrom when you have a floated element.
+
+Right now you can't use 2 transforms on the same element.
+
+video element - use this to embed videos on a webpage
+free videos - coverr.co
+
+To set it as background - use position relative on section stories, and absolute on bg-video. Bring the hidden elements on top by setting z-index = -1. 
+
+To fill background with video  - use object-fit: cover, height and width 100%. This will also fit with image as well. Use overflow - hidden to remove the overflow.
+
+background size: 100% same as cover
+
+
+	&::-webkit-input-placeholder  new psuedo element, works only in chrome and safari 
+
+	:: means a psuedo element, an actual element on a page and not a psuedo-class.
+
+	input elements do not inherit font properties so you need to manually add the property and inherit.
+
+	Can use the valid and invalid google property in css 
+
+	in order to use box-model properties unless you make the form elements block.
+
+	&__input:place-holder-shown + &__label = + indicates first adjacent sibling selector. it always has to be after the input.
+
+
+	When creating radio buttons you need to make sure you add the same name to both buttons so you can only select one at a time. You also need to add a span tag in order to create a button bc you cant style them otherwise. You do this by hiding the original button.
+
+Building burger menu - build a checkbox. have a label connected to the checkbox. reveal the entire navigation once it's checked.
+
+To create menu burger - use a span tag and you'll have on element with a before and after pseudo element. Then once it is clicked, one disappears and the others rotat to creat an X. Set display to inline-block.
+
+Creating a POPUP - add html anywhere but we're adding it to the end.
+
+Use display: table-cell in order to create two columns with the exact same height. So the parent you set as the table and the children as table cells.
+
+Hide something and be able to animate it - opacity: 0; visibility: hidden;
+
+To create the popup effect you add a target - add ID to target you want to popup and add the same #targetname to href = "#name"
+
+MEDIA QUERY
+Using mixin with response code allows you to add a block of code with a mixin - 
+
+@mixin respond-phone {
+	@media (max-width: 600px) { @content };
+}
+
+In media query - always changed based on browswer and not root base. So we use ems. 
+
+Always put the larger media queries before the smaller ones. If the queries overlap only the last declaration applies.
