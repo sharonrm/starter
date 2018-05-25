@@ -27,11 +27,41 @@ also added a delay of .2s to transition*/
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(.25);
 		transition: all .5s .2s;
+
+		    @include respond(tab-land) {
+		    	width: auto;
+		    }
+
+		    @include respond(tab-port) {
+		    	width: auto;
+		    }
+
+			@include respond(phone) {
+				display: block;
+				position: relative;
+				width: 90%;
+				padding-bottom: 1rem;
+				padding-top: 1rem;
+			
+			}
+
+			
 		}
 
 	&__left {
 		width: 33.3333333%;
 		display: table-cell;
+
+
+	     @include respond(tab-land) {
+			 vertical-align: middle;
+	
+	     }
+
+			@include respond(phone) {
+				display: block;
+			
+			}
 	}
 
 	&__right {
@@ -39,11 +69,32 @@ also added a delay of .2s to transition*/
 		display: table-cell;
 		vertical-align: middle;
 		padding: 3rem 5rem;
+
+					@include respond(tab-port) {
+						width: 50%;
+						padding: 0;
+						margin: .5rem .5rem .5rem 0;
+			
+					}
+
+					@include respond(phone) {
+						width: 65%;
+						display: block;
+						margin: 0 auto;
+					}
 	}
 
 	&__img {
 		display: block;
 		width: 100%;
+
+			@include respond(tab-port) {
+				width: 75%;
+			}
+
+	    	@include respond(phone) {
+	    	display: none;
+	    	}
 	}
 
 	&__text {
@@ -54,6 +105,8 @@ also added a delay of .2s to transition*/
 		-moz-column-count: 2;
 		-moz-column-gap: 4rem;
 		-moz-column-rule: 1px solid $color-grey-light-2;
+
+		
 
 		column-count: 2;
 		column-gap: 4rem;
