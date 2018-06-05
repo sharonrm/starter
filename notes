@@ -61,3 +61,14 @@ Using mixin with response code allows you to add a block of code with a mixin -
 In media query - always changed based on browswer and not root base. So we use ems. 
 
 Always put the larger media queries before the smaller ones. If the queries overlap only the last declaration applies.
+
+use @supports() in order to test to use newer properties and then you can use them for browsers that do work.
+
+How to setup a build process:
+
+COMPILATION
+CONCATANATION
+PREFIXING
+COMPRESSING
+
+You do this in package.json file
